@@ -1,3 +1,6 @@
+import { printRuntimeInfo } from "./runtime-info.js";
+
+printRuntimeInfo();
 const appName = process.env.APP_NAME;
 const userName = process.argv[2] ?? "Anonymous";
 
