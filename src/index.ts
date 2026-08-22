@@ -1,15 +1,66 @@
 import { printRuntimeInfo } from "./runtime-info.js";
+import { readFile } from "node:fs/promises";
 
 printRuntimeInfo();
-const appName = process.env.APP_NAME;
-const userName = process.argv[2] ?? "Anonymous";
+const appName:string = process.env.APP_NAME ?? "";
+const userName:string = process.argv[2] ?? "Anonymous";
+const filePath:string = process.argv[3] ?? "data/customers.json";
+
 
 if(!appName){
     console.error("Error: APP_NAME environment variable is required");
     process.exitCode = 1;
 } else{
     console.log(`${appName} is running for ${userName}`);
+    console.log(filePath);
 }
+
+type Customer = {
+    id: number;
+    name: string;
+    active: boolean;
+}
+
+try{
+    const json_data:string = await readFile(filePath, {encoding: "utf-8"});
+    const data:Customer[] = JSON.parse(json_data);
+    const active:Customer[] = data.filter((customer : Customer) => {
+        return customer.active === true;
+    });
+    console.log("File content:", data);
+    console.log("Total records: " + data.length);
+    console.log("Active records: " + active.length);
+
+} catch(error){
+    console.error("Error reading file:", error);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // npm run dev
 // npm run dev -- Siddhesh
