@@ -15,6 +15,8 @@ if(!appName){
 // node --env-file=.env --import=tsx src/index.ts
 // node --env-file=.env dist/index.js
 // node --env-file=.env dist/index.js Siddhesh
+// commands
+
 
 
 
