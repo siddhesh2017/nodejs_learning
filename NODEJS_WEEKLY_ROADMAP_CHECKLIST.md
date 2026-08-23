@@ -40,9 +40,9 @@ How to use:
 
 ### 4) Node core modules (hands-on)
 - [x] Use node:fs/promises for file read/write
-- [ ] Use node:path for safe path handling
+- [x] Use node:path for safe path handling
 - [x] Use node:os for runtime info
-- [ ] Use node:crypto for checksum/hash basics
+- [x] Use node:crypto for checksum/hash basics
 - [ ] Use node:events for event-driven flow basics
 
 ### 5) Day 1 mini project tasks
