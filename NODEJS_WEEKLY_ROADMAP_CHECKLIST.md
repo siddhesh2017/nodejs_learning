@@ -39,27 +39,27 @@ How to use:
 - [✅] Use correct import paths for Node ESM output
 
 ### 4) Node core modules (hands-on)
-- [x] Use node:fs/promises for file read/write
-- [x] Use node:path for safe path handling
-- [x] Use node:os for runtime info
-- [x] Use node:crypto for checksum/hash basics
-- [ ] Use node:events for event-driven flow basics
+- [✅] Use node:fs/promises for file read/write
+- [✅] Use node:path for safe path handling
+- [✅] Use node:os for runtime info
+- [✅] Use node:crypto for checksum/hash basics
+- [✅] Use node:events for event-driven flow basics
 
 ### 5) Day 1 mini project tasks
-- [x] Build CLI entry point
-- [x] Read config from environment variables
-- [x] Read JSON file from provided path/default path
-- [x] Parse JSON and print summary
-- [skipped] Generate summary report file in reports/
+- [✅] Build CLI entry point
+- [✅] Read config from environment variables
+- [✅] Read JSON file from provided path/default path
+- [✅] Parse JSON and print summary
+- [✅] Generate summary report file in reports/
 - [x] Handle missing file and malformed JSON errors
 - [skipped] Add strict TypeScript schema validation for parsed JSON
 
 ### 6) Day 1 quality checks
-- [x] Add .env and .env.example
-- [x] Ensure .env is in .gitignore
-- [x] Run typecheck without errors
-- [x] Run dev command successfully
-- [x] Run build and start successfully
+- [✅] Add .env and .env.example
+- [✅] Ensure .env is in .gitignore
+- [✅] Run typecheck without errors
+- [✅] Run dev command successfully
+- [✅] Run build and start successfully
 
 ---
 
