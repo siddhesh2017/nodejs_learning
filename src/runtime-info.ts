@@ -9,3 +9,11 @@ export function printRuntimeInfo() {
     console.log("Current process ID:", process.pid);
     console.log("\n");
 }
+
+export function getMemoryUssage() {
+    return os.totalmem() - os.freemem();
+}
+
+export function getCpu() {
+    return os.cpus();
+}

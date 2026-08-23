@@ -7,8 +7,8 @@ How to use:
 - Follow in order, but you can skip and return anytime.
 
 ## Week Plan Overview
-- [ ] Day 1: Node.js fundamentals, runtime, modules, config, JSON file processing CLI (in progress)
-- [ ] Day 2: HTTP fundamentals + Express API + CRUD
+- [x] Day 1: Node.js fundamentals, runtime, modules, config, JSON file processing CLI
+- [ ] Day 2: HTTP fundamentals + Express API + CRUD (HTTP and in-memory CRUD complete; Express pending)
 - [ ] Day 3: Middleware, validation, centralized error handling, environment config
 - [ ] Day 4: OpenAPI docs, external API consumption, auth basics, role-based access
 - [ ] Day 5: Logging, tracing, resilience basics, unit testing
@@ -34,42 +34,42 @@ How to use:
 - [x] Use process exit codes for failures
 
 ### 3) CommonJS vs ES Modules
-- [✅] Understand difference between CJS and ESM
-- [✅] Use ESM in project (type: module)
-- [✅] Use correct import paths for Node ESM output
+- [x] Understand difference between CJS and ESM
+- [x] Use ESM in project (type: module)
+- [x] Use correct import paths for Node ESM output
 
 ### 4) Node core modules (hands-on)
-- [✅] Use node:fs/promises for file read/write
-- [✅] Use node:path for safe path handling
-- [✅] Use node:os for runtime info
-- [✅] Use node:crypto for checksum/hash basics
-- [✅] Use node:events for event-driven flow basics
+- [x] Use node:fs/promises for file read/write
+- [x] Use node:path for safe path handling
+- [x] Use node:os for runtime info
+- [x] Use node:crypto for checksum/hash basics
+- [x] Use node:events for event-driven flow basics
 
 ### 5) Day 1 mini project tasks
-- [✅] Build CLI entry point
-- [✅] Read config from environment variables
-- [✅] Read JSON file from provided path/default path
-- [✅] Parse JSON and print summary
-- [✅] Generate summary report file in reports/
+- [x] Build CLI entry point
+- [x] Read config from environment variables
+- [x] Read JSON file from provided path/default path
+- [x] Parse JSON and print summary
+- [x] Generate summary report file in reports/
 - [x] Handle missing file and malformed JSON errors
 - [skipped] Add strict TypeScript schema validation for parsed JSON
 
 ### 6) Day 1 quality checks
-- [✅] Add .env and .env.example
-- [✅] Ensure .env is in .gitignore
-- [✅] Run typecheck without errors
-- [✅] Run dev command successfully
-- [✅] Run build and start successfully
+- [x] Add .env and .env.example
+- [x] Ensure .env is in .gitignore
+- [x] Run typecheck without errors
+- [x] Run dev command successfully
+- [x] Run build and start successfully
 
 ---
 
 ## Day 2: HTTP + REST + Express (Customer API)
 
 ### 1) HTTP fundamentals
-- [ ] Understand request/response lifecycle
-- [ ] Understand methods: GET, POST, PUT/PATCH, DELETE
-- [ ] Understand status codes: 200, 201, 204, 400, 404, 409, 500
-- [ ] Understand headers, query params, path params, request body
+- [x] Understand request/response lifecycle
+- [x] Understand methods: GET, POST, PUT/PATCH, DELETE
+- [x] Understand status codes: 200, 201, 204, 400, 404, 405, 500
+- [x] Understand headers, query params, path params, request body
 
 ### 2) Express setup
 - [ ] Install Express and TypeScript types
@@ -78,12 +78,12 @@ How to use:
 - [ ] Add JSON body parser
 
 ### 3) Customer CRUD API
-- [ ] Create in-memory customer store
-- [ ] GET /customers
-- [ ] GET /customers/:id
-- [ ] POST /customers
-- [ ] PUT or PATCH /customers/:id
-- [ ] DELETE /customers/:id
+- [x] Create in-memory customer store
+- [x] GET /customers
+- [x] GET /customers/:id
+- [x] POST /customers
+- [x] PUT or PATCH /customers/:id
+- [x] DELETE /customers/:id
 
 ### 4) API design basics
 - [ ] Return consistent JSON shape
@@ -226,7 +226,7 @@ How to use:
 
 ## Progress Log
 - [x] Week started
-- [ ] Day 1 completed
+- [x] Day 1 completed
 - [ ] Day 2 completed
 - [ ] Day 3 completed
 - [ ] Day 4 completed
